@@ -5,12 +5,12 @@ import Textbox from '@/app/components/textBox';
 import { useTextContext } from '@/app/contexts/textContext';
 
 
-interface BioProps{
-    // title: string|number;
-}
+// interface BioProps{
+//     // title: string|number;
+// }
 
 
-export default function Bio({ }: BioProps){
+export default function Bio(){
     const { text, setText } = useTextContext();
     return(
         <div className="w-1/2 bg-red-700 h-full fixed left-0 top-0 z-10 p-10">
@@ -21,11 +21,11 @@ export default function Bio({ }: BioProps){
             <p className="text-3xl mt-25 mb-25 blinking-cursor h-30">{text}</p>
             <Textbox/>
             <footer className="flex flex-row justify-start">
-                <Button src="githubicon.png" srcName="Github" link="https://github.com/Dragoon788"/>
-                <Button src="LinkedInicon.png" srcName="LinkedIn" link="https://www.linkedin.com/in/francis-velasco-a53ba8242/"/>
+                <Button src="/githubicon.png" srcName="Github" link="https://github.com/Dragoon788"/>
+                <Button src="/LinkedInicon.png" srcName="LinkedIn" link="https://www.linkedin.com/in/francis-velasco-a53ba8242/"/>
             </footer>
 
             
         </div>
-    )
+    );
 }

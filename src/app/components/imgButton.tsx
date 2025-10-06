@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 interface butProps{
     src: string;
     srcName: string;
@@ -10,7 +12,7 @@ export default function Button( { src, srcName, link}: butProps){
         href={link}
         className="m-2 inline-block hover:opacity-50"
       >
-        <img src={src} alt={`${srcName} image`} className="w-8 h-8" />
+        <Image src={src} alt={`${srcName} image`} width={30} height={30} className="" />
       </a>
     )
 }

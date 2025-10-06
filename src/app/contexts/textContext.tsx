@@ -6,6 +6,7 @@ import {
     useContext,
     useState,
     Dispatch,
+    SetStateAction,
   } from 'react';
   
   interface TextContextProviderProps {
@@ -14,7 +15,7 @@ import {
   
   interface Textbox {
     text: string;
-    setText: Dispatch<any>;
+    setText: Dispatch<SetStateAction<string>>;
   }
   
   // Module is important in allowing different views of color
